@@ -1,7 +1,7 @@
 SlimServices
 ============
 
-SlimServices is an implementation of a service manager for the [Slim PHP microframework](http://github.com/codeguy/slim) based on [Laravel 4](http://laravel.com) service providers and DI container, allowing you to use core and many third-party Laravel packages in Slim based projects.
+SlimServices is a service manager for the [Slim PHP microframework](http://github.com/codeguy/slim) based on [Laravel 4](http://laravel.com) service providers and DI container, allowing you to use core and many third-party Laravel packages in Slim based projects.
 
 For example, to add Eloquent ORM to your Slim app:
 
@@ -177,7 +177,8 @@ if ($validator->fails()) { ... }
 ```
 
 ### Custom service providers
-- you can create custom service providers simply by extending `Illuminate\Support\ServiceProvider` class and registering them with the ServiceManager
+
+You can create custom service providers simply by extending the `Illuminate\Support\ServiceProvider` class and registering them with the ServiceManager.
 
 ```php
 class MailerServiceProvider extends Illuminate\Support\ServiceProvider

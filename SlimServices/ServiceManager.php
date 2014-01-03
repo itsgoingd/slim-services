@@ -1,8 +1,6 @@
 <?php
 namespace SlimServices;
 
-use ArrayAccess;
-
 use Illuminate\Container\Container as IlluminateContainer;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 use Slim\Slim;
@@ -10,7 +8,7 @@ use Slim\Slim;
 class ServiceManager extends IlluminateContainer
 {
 	protected $app;
-    protected $services = array();
+	protected $services = array();
 
 	public function __construct(Slim $app)
 	{
